@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Remover Utilizador</h1>
+<form>
+    <mat-dialog-content>
+        <!-- app-avatar
+            [name]="user.name"
+            [photo]="user.avatar"
+            class="avatar"
+        ></app-avatar -->
+        <h3>
+            Confirma que deseja remover o utilizador
+            <strong>Rui Antoninho</strong
+            >?
+        </h3>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button mat-button color="primary" type="submit">
+            <mat-icon>person_remove</mat-icon>
+            Remover
+        </button>
+        <button mat-button color="accent" type="button">
+            <mat-icon>cancel</mat-icon>
+            Cancelar
+        </button>
+    </mat-dialog-actions>
+</form>
+

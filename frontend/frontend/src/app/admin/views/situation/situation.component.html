@@ -1,0 +1,45 @@
+
+<div class="container" fxLayout fxLayoutGap="20px">
+    <div class="titulo" >
+        <h1>Detalhe do Pedido</h1>
+    </div>
+    <div class="forms" fxFlex>
+        <form
+            class="info-form" style="align-items: center;"
+        >
+  
+            <div class="basic-info" style="margin-left: 16px; margin: 20px;">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1" style="margin-bottom: 10px;">Saiu para entrega
+                    
+                    <mat-form-field appearance="fill" style="margin-left: 20px;">
+                        <mat-label>Selecione o Entregador</mat-label>
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">Lucas Neto</mat-option>
+                          <mat-option value="option2">Tomas Costa</mat-option>
+                          <mat-option value="option3">João Gonçalves</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </mat-radio-button>
+                    
+
+                    <br>
+                    <mat-radio-button value="2" style="margin-bottom: 10px;">Pedido Entregue</mat-radio-button>
+                    <br>
+                    <mat-radio-button value="3" style="margin-bottom: 10px;">Pedido Cancelado</mat-radio-button>
+                  </mat-radio-group>
+  
+          </div>
+  
+            <div class="actions">
+                <button
+                    mat-raised-button
+                    class="botao"
+                    type="submit"
+                >
+                    Enviar Pedido
+                </button>
+            </div>
+        </form>
+    </div>
+  </div>

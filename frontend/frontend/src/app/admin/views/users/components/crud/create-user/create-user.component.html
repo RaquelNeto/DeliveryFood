@@ -1,0 +1,51 @@
+<h1 mat-dialog-title>Adicionar Utilizador</h1>
+<form >
+    <mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input
+                matInput
+                placeholder="Nome do Utilizador"
+                formControlName="name"
+                name="name"
+            />
+            <mat-icon matPrefix>account_circle</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input
+                matInput
+                placeholder="User email"
+                type="email"
+                formControlName="email"
+                name="email"
+            />
+            <mat-icon matPrefix>email</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Role</mat-label>
+            <mat-select formControlName="role" name="role">
+            </mat-select>
+
+            <mat-icon matPrefix>admin_panel_settings</mat-icon>
+        </mat-form-field>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button
+            mat-button
+            color="primary"
+            type="submit"
+        >
+            <mat-icon>person_add</mat-icon>
+            Adicionar
+        </button>
+        <button mat-button color="accent" type="button" >
+            <mat-icon>cancel</mat-icon>
+            Cancelar
+        </button>
+    </mat-dialog-actions>
+</form>
+

@@ -1,0 +1,107 @@
+
+<div class="input-wrapper">
+    <div class="fa fa-search"></div>
+    <input type="text" placeholder="Search" />
+    <div class="fa fa-times"></div>
+</div>
+
+<div class="add">
+    <button class="botao">
+        + Novo
+    </button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Ativo</th>
+            <th>Situação</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td data-label="S.No"> <img src="../../../../assets/logo.png" alt="" width="80" height="80"> </td>
+            <td data-label="Name">
+                <a 
+                  mat-list-item
+                  routerLinkActive="active-menu"
+                  routerLink="/admin/information-deliver">
+                  Raquel
+                </a>
+            </td>
+            <td data-label="Age">30</td>
+            <td data-label="Marks%">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td data-label="Staus">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td data-label="S.No"> <img src="../../../../assets/logo.png" alt="" width="80" height="80"> </td>
+            <td data-label="Name">
+                <a href="">Manuel</a>
+            </td>
+            <td data-label="Age">24</td>
+            <td data-label="Marks%">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td data-label="Staus">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td data-label="S.No"> <img src="../../../../assets/logo.png" alt="" width="80" height="80"> </td>
+            <td data-label="Name">Dinesh</td>
+            <td data-label="Age">34</td>
+            <td data-label="Marks%">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td data-label="Staus">
+                <mat-form-field appearance="fill">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="sim">Sim</mat-option>
+                      <mat-option value="nao">Não</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+

@@ -1,0 +1,83 @@
+.row{
+    display: flex;
+    align-items: center;
+    padding: 1em 3em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.row > * + * {
+    margin-left: 20px;
+}
+
+.row > *{
+    flex: 0 1 auto;
+}
+
+.basic-info {
+    flex: 0 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.basic-info > * + *{
+    margin-left: 10px;
+}
+
+.basic-info  ::ng-deep .avatar{
+    align-self: center;
+}
+
+.root{
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.name{
+    color: #0A3C57;
+    font-weight: 500;
+    font-size: 1.15em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.role, .email{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.role, .email > mat-icon{
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+.actions{
+    margin-right: auto;
+}
+ 
+.actions > * + * {
+    margin-left: 5px;
+}
+        
+.mat-icon-button{
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+}
+
+.mat-icon{
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    font-size: 18px;
+}

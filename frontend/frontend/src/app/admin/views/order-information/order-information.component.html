@@ -1,0 +1,87 @@
+
+
+<div class="container" fxLayout fxLayoutGap="20px">
+    <div class="titulo" >
+        <h1>Detalhe do Pedido</h1>
+    </div>
+    <div class="forms" fxFlex>
+        <form
+            class="info-form" style="align-items: center;"
+        >
+  
+            <div class="basic-info">
+                
+              <div class="inputfield" style="margin-left: 20px;">
+                  <label> Situação: </label>
+                  <b> Pedido Realizado </b> 
+              </div> 
+  
+              <div class="inputfield">
+                  <label> Criado: </label>
+                  <b> 2 minutos atrás </b> 
+              </div> 
+  
+              <div class="inputfield">
+                  <label>Atualizado</label>
+                  <b> Não atualizado </b>
+              </div> 
+  
+              <div class="inputfield">        
+                  <label>Forma de pagamento:</label>
+                  <b> Pagamento já efetuado </b>
+              </div> 
+  
+              <div class="inputfield">        
+                  <label>Valor do Pedido</label>
+                  <b> 50.00€ </b>
+              </div> 
+
+              <div class="inputfield">        
+                <label>Endereço</label>
+                <b> Rua das Palmeiras nº31, Porto   4620-472 </b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Entregador</label>
+                <b> Lucas Neto </b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Produto</label>
+                <b> Lasanha</b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Quantidade</label>
+                <b> 1 </b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Produtos Especiais</label>
+                <b> Nenhum </b>
+            </div> 
+  
+          </div>
+  
+            <div class="actions">
+                <a
+                    mat-raised-button
+                    class="botao"
+                    type="submit"          
+                    routerLinkActive="active-menu"
+                    routerLink="/admin/situation"  
+                >
+                    Alterar Situação
+                </a>
+  
+                <button
+                    mat-raised-button
+                    class="botao"
+                    type="submit"
+                >
+                    Excluir Pedido
+                </button>
+            </div>
+        </form>
+    </div>
+  </div>

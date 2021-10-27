@@ -1,0 +1,62 @@
+
+  <!-- LOADERS END -->
+  
+  <div fxLayout="row" fxLayoutAlign="center start" ngClass.gt-sm="padding" class="mat-typography">
+    <div fxLayout="column" fxFlex="85" fxFlex.lt-md="100" fxLayoutGap="10px"  >
+  
+      <!-- BACK AND TITLE START -->
+      <div ngClass.lt-md="padding no-padding-bottom">
+        <div fxLayoutAlign="space-between start" fxLayout="row">
+          <h3 fxLayout="row" fxLayoutAlign="start center" class="no-margin-bottom">
+              <button mat-icon-button matTooltip="Voltar" routerLink="/admin/category"><mat-icon>arrow_back</mat-icon></button> Voltar
+          </h3>
+        </div>
+      </div>
+      <!--BACK AND TITLE END -->  
+  
+      <!-- CONTENT START -->
+      <div fxLayout="column" fxLayoutGap="10px" >
+        <div ngClass.gt-sm="mat-elevation-z1 rounded-border">
+          <div class="forms" fxFlex>
+            <form
+                class="info-form" style="align-items: center;"
+            >
+                <h2 style="color: #0A3C57;">Categoria</h2>
+      
+                <div class="basic-info">
+                    
+                  <div class="inputfield" style="margin-left: 20px;">
+                      <label> Nome: </label>
+                      <input placeholder="nome">
+                  </div> 
+      
+                  <div class="inputfield">
+                      <label> Descriçao: </label>
+                      <input placeholder="descrição">
+                  </div> 
+              </div>
+      
+                <div class="actions">
+                    <button
+                        mat-raised-button
+                        class="botao"
+                        type="submit"
+                    >
+                        Criar Categoria
+                    </button>
+      
+                    <button
+                        mat-raised-button
+                        class="botao"
+                        type="submit"
+                    >
+                        Cancelar
+                    </button>
+               </div> 
+    </form>
+  </div>
+      </div>
+      <!-- CONTENT END -->    
+  
+    </div>
+  </div>

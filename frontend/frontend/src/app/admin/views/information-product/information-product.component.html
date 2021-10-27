@@ -1,0 +1,101 @@
+<div class="container" fxLayout fxLayoutGap="20px">
+    <div class="" fxFlex="250px">
+        <div class="info">
+            <h2>Informações do Produto</h2>
+        </div>
+    </div>
+    <div class="forms" fxFlex>
+        <form class="info-form" >
+                <div class="basic-info" style="display: flex; width: 1340px;">
+                    <div class="box-1" style="border: 1px solid black; padding: 10px; display: block; width: 40%; ">
+                        <h2 style="background-color: #e0e0e0;">Detalhes do Produtos</h2>
+                        <label for="fname"> <b> Nome: </b> </label>
+                        <p> Hamburger Las Vegas </p>
+
+                        <label for="description"> <b> Descrição: </b> </label>
+                        <p> Hamburguer delicioso e muito economico. </p>
+                    </div>
+
+                    <div class="box-1" style="border: 1px solid black; padding: 10px; display: block; width: 40%;">
+                        <h2 style="background-color: #e0e0e0;">Outros</h2>
+                        <label for="fname"> <b> Estado: </b> </label>
+                        <select name="state" id="state">
+                            <option value="volvo">Publicado</option>
+                        </select><br><br>           
+
+                        <label for="description"> <b> Imagem: </b> </label>
+                        <img src="../../../../assets/logo.png" alt="" width="80" height="80">
+                        <button style="margin-left: 20px;">Alterar Imagem</button>
+                     </div>
+                </div>
+
+
+                <div class="basic-info" style="display: flex; width: 1340px;">
+                    <div class="box-1" style="border: 1px solid black; padding: 10px; display: block; width: 40%; margin-top: 20px;">
+                        <h2 style="background-color: #e0e0e0;">Categoria</h2>
+                        
+                        <p> <b> Escolha a Categoria: </b></p>
+                          <input type="radio" id="html" name="fav_language" value="HTML" checked>
+                          <label for="html">Hambueguer</label><br>
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">Pizza</label><br>
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                          <label for="javascript">Sobremesa</label>
+
+                    </div>
+    
+                    <div class="box-1" style="border: 1px solid black; padding: 10px; display: block; width: 40%; margin-top: 20px;">
+                        <h2 style="background-color: #e0e0e0;">Ingredientes</h2>
+                        
+                        <p> <b> Escolha os Ingredientes: </b></p>
+                          <input type="radio" id="html" name="fav_language" value="HTML">
+                          <label for="html">Cebola</label><br>
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">Tomate</label><br>
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                          <label for="javascript">Cogumelos</label>          
+                    </div>
+                
+               
+                </div>
+
+
+                <div class="basic-info" style="display: flex; width: 1340px;">
+                    <div class="box-1" style="border: 1px solid black; padding: 10px; display: block; width: 40%; margin-top: 20px;">
+                        <h2 style="background-color: #e0e0e0;">Ingredientes Extras</h2>
+                        
+                        <p><b> Escolha os Ingredientes Extras: </b></p>
+                          <input type="radio" id="html" name="fav_language" value="HTML">
+                          <label for="html">Ketchup (0,20€) </label><br>
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">Café (0,70€)</label><br>
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                          <label for="javascript">Maça (1,00€)</label>
+
+                    </div>                    
+                </div>
+  
+            <div class="actions">
+                <button
+                    mat-raised-button
+                    class="botao"
+                    type="submit"
+                >
+                    Atualizar Dados
+                </button>
+  
+                <button
+                    mat-raised-button
+                    class="botao"
+                    type="submit"
+                >
+                    Excluir
+                </button>
+            </div>
+        </form>
+    </div>
+  </div>
+  
+  
+  
+  

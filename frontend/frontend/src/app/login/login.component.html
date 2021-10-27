@@ -1,0 +1,36 @@
+<div class="body">
+
+    <form class="root" #form='ngForm' action="index.html" (submit)="login()">
+        <img src="../../assets/logo.png" alt="" style="margin: 20px; display: block;" height="220">
+
+        <h1>Iniciar Sessão</h1>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput name="email" placeholder="Email" [(ngModel)]="model.email" />
+            <mat-icon matPrefix style="padding-right: 5px;">account_circle</mat-icon>
+
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="model.password" name="password" />
+            <mat-icon id="hide-btn" (click)="hide = !hide" matSuffix>
+                {{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            <mat-icon matPrefix style="padding-right: 5px;">vpn_key</mat-icon>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" class="login-button" value="Login">
+            Iniciar Sessão
+        </button>
+
+        <a routerLink="/reset-password" mat-button class="reset-btn">
+            Recuperação de Password
+            <mat-icon matSuffix>keyboard_arrow_right</mat-icon>
+        </a>
+
+    </form>
+
+    <div class="background"> </div>
+
+</div>

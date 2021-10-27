@@ -1,0 +1,48 @@
+mat-dialog-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h3  ::ng-deep .avatar{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.root{
+    font-size: 26px;
+    font-weight: 300;
+    height: 75px;
+    width: 75px;
+}
+
+mat-dialog-actions{
+    align-items: center;
+    display: flex;
+}
+
+mat-dialog-actions > * + * {
+    margin-left: 10px;
+}
+
+button{
+    border-radius: 0;
+    font-weight: 400;
+}
+
+.mat-icon{
+    font-size: inherit;
+    height: fit-content;
+    padding-right: 0.25rem;
+    width: fit-content;
+}

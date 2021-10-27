@@ -1,0 +1,140 @@
+.container{
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+
+.titulo{
+    background-color: #0A3C57;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+h1{
+    margin-top: 5px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.info > * + *:not(p){
+    margin-top: 10px;
+}
+
+:ng-deep .avatar
+    .root{
+        height: 100px;
+        width: 100px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.forms > form{
+        flex: 0 1 auto;
+        padding: 1em 1.5em;
+        box-sizing: border-box;
+        background-color: #fff;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions > button + button {
+        margin-left: 10px;
+}
+
+button{
+        font-weight: 300;
+        border-radius: 0;
+        padding: 10px;
+}
+
+.mat-raised-button.mat-accent{
+    color: #fff;
+}
+
+.hide-btn{
+    cursor: pointer;
+}
+
+.info-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.basic-info > * + * {
+    margin-left: 20px;
+}
+
+.password-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mat-form-field {
+    width: 300px;
+}
+
+mat-accordion{
+    margin-top: 20px;
+}
+
+.imagem{
+    height: 90px;
+    width: 90px;
+}
+
+.botao{
+    background-color: #0A3C57;
+    color: #fff;
+}
+
+.inputfield{
+   width: 100%;
+   padding: 8px 10px;
+   font-size: 15px; 
+   border: 0px;
+   cursor: pointer;
+   border-radius: 3px;
+   outline: none;
+}
+
+label{
+    margin-right: 10px;
+}
+
+
+@media (max-width:420px) {
+    .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .inputfield label{
+      margin-bottom: 5px;
+    }
+    .inputfield.terms{
+      flex-direction: row;
+    }
+}

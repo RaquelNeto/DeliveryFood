@@ -1,0 +1,78 @@
+
+<div class="container" fxLayout fxLayoutGap="20px">
+  <div class="" fxFlex="250px">
+      <div class="info">
+          <img src="https://source.unsplash.com/c_GmwfHBDzk/200x200" class="imagem" />
+          <!--app-custom-file-input
+              title="Foto de Perfil"
+              (change)="onChangeFile($event)"
+          ></app-custom-file-input>
+          <mat-error
+              *ngIf="profileForm.get('avatar').hasError('invalidFile')"
+          >
+              O ficheiro selecionado ÃƒÂ© invÃƒÂ¡lido. Por favor escolha uma imagem
+              do tipo: <em>png; jpg; jpeg</em>.
+          </mat-error -->
+
+          <h2>João Miguel</h2>
+          <p>joaomiguel@hotmail.com</p>
+      </div>
+  </div>
+  <div class="forms" fxFlex>
+      <form
+          class="info-form" style="align-items: center;"
+      >
+          <h2 style="color: #0A3C57;">Dados Pessoais</h2>
+
+          <div class="basic-info">
+              
+            <div class="inputfield" style="margin-left: 20px;">
+                <label> Nome: </label>
+                <b> João </b> 
+            </div> 
+
+            <div class="inputfield">
+                <label> Telefone: </label>
+                <b> 919009729 </b> 
+            </div> 
+
+            <div class="inputfield">
+                <label>Veículo</label>
+                <b> Titan 250 - Preta -2018 | AUG-8667 </b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Ativo</label>
+                <b> Sim </b>
+            </div> 
+
+            <div class="inputfield">        
+                <label>Atualizado</label>
+                <b> 1 mês atrás </b>
+            </div> 
+
+        </div>
+
+          <div class="actions">
+              <button
+                  mat-raised-button
+                  class="botao"
+                  type="submit"
+              >
+                  Atualizar Dados
+              </button>
+
+              <button
+                  mat-raised-button
+                  class="botao"
+                  type="submit"
+              >
+                  Excluir
+              </button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+

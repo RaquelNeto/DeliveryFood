@@ -1,0 +1,68 @@
+<div class="container" fxLayout fxLayoutGap="20px">
+    <div class="" fxFlex="250px">
+        <div class="info">
+            <h2>Informações do Restaurante</h2>
+        </div>
+    </div>
+    <div class="forms" fxFlex>
+        <form class="info-form" #form='ngForm' action="index.html" (submit)="atualizardados()">
+            <h2 style="color: #0A3C57;">Dados Pessoais</h2>
+
+            <div class="basic-info" *ngIf="restaurant != undefined">
+                <mat-form-field style="margin-left: 20px;">
+                    <mat-label>{{restaurant.name}}</mat-label>
+                    <input matInput type="text" name="name" formControlName="name" [(ngModel)]="model.name" />
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>{{restaurant.email}}</mat-label>
+                    <input matInput type="email" formControlName="email" [(ngModel)]="model.email" />
+                    <mat-icon matPrefix>email</mat-icon>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>{{restaurant.phone}}</mat-label>
+                    <input matInput type="text" formControlName="phone " [(ngModel)]="model.phone" />
+                    <mat-icon matPrefix> phone</mat-icon>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>{{restaurant.street}}</mat-label>
+                    <input matInput type="text" formControlName="morada" [(ngModel)]="model.street" />
+                    <mat-icon matPrefix> house</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>{{restaurant.zip}}</mat-label>
+                    <input matInput type="text" formControlName="codigo-postal" [(ngModel)]="model.zip" />
+                    <mat-icon matPrefix>house</mat-icon>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>{{restaurant.city}}</mat-label>
+                    <input matInput type="text" formControlName="city" [(ngModel)]="model.city" />
+                    <mat-icon matPrefix>village</mat-icon>
+                </mat-form-field>
+                <br>
+                <!--app-custom-file-input
+                    title="Foto de Perfil"
+                    (change)="onChangeFile($event)"
+                ></app-custom-file-input>
+                <mat-error
+                    *ngIf="profileForm.get('avatar').hasError('invalidFile')"
+                >
+                    O ficheiro selecionado é inválido. Por favor escolha uma imagem
+                    do tipo: <em>png; jpg; jpeg</em>.
+                </mat-error -->
+            </div>
+
+
+            <div class="actions">
+                <button mat-raised-button class="botao" type="submit" value="atualizardados">
+                    Atualizar Dados
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

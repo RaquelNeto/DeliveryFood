@@ -1,0 +1,109 @@
+<div class="container" fxLayout fxLayoutGap="20px">
+    <div class="" fxFlex="250px">
+        <div class="info" *ngIf="user != undefined">
+            <img src="{{user.photo}}" alt="" class="imagem" />
+            <h2>{{user.name}}</h2>
+            <p>{{user.email}}</p>
+        </div>
+    </div>
+    <div class="forms" fxFlex>
+        <form class="info-form" #form='ngForm' action="index.html" (submit)="atualizardados()">
+            <h2 style="color: #0A3C57;">Dados Pessoais</h2>
+
+            <div class="basic-info">
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input matInput name="name" [(ngModel)]="model.name" placeholder="Name" />
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email" />
+                    <mat-icon matPrefix>email</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Contacto</mat-label>
+                    <input matInput name="phone_number" [(ngModel)]="model.phone_number" placeholder="phone_number" />
+                    <mat-icon matPrefix> phone</mat-icon>
+                </mat-form-field>
+            </div>
+
+            <!--app-custom-file-input
+                title="Foto de Perfil"
+                (change)="onChangeFile($event)"
+            ></app-custom-file-input>
+            <mat-error
+                *ngIf="profileForm.get('avatar').hasError('invalidFile')"
+            >
+                O ficheiro selecionado é inválido. Por favor escolha uma imagem
+                do tipo: <em>png; jpg; jpeg</em>.
+            </mat-error -->
+
+            <ng-template>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Data de Nascimento</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker">
+                        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </ng-template>
+
+            <div class="actions">
+                <button mat-raised-button class="botao" type="submit" value="atualizardados">
+                    Atualizar Dados
+                </button>
+            </div>
+        </form>
+
+        <mat-accordion>
+            <mat-expansion-panel class="change-password-accordion">
+                <mat-expansion-panel-header>
+                    <mat-panel-title style="color: #0A3C57;"> Alteração de Password</mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <form #form='ngForm' action="index.html" (submit)="atualizardados()">
+                    <mat-form-field>
+                        <mat-label>Password Antiga</mat-label>
+                        <input matInput [(ngModel)]="model.password" placeholder="Password" name="oldPassword" />
+                        <mat-icon class="hide-btn" (click)="hide = !hide" matSuffix>
+                            {{ oldHide ? 'visibility_off' : 'visibility' }}
+                        </mat-icon>
+                        <mat-icon matPrefix>vpn_key</mat-icon>
+                        <!-- TODO: add validation messages -->
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Nova Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" name="newPassword" [(ngModel)]="model.new_password" placeholder="New password" />
+                        <mat-icon class="hide-btn" (click)="hide = !hide" matSuffix>
+                            {{ hide ? 'visibility_off' : 'visibility' }}
+                        </mat-icon>
+                        <mat-icon matPrefix>vpn_key</mat-icon>
+                        <!-- TODO: add validation messages -->
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Confirmação de Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" name="confirmPassword" [(ngModel)]="model.confirm_password" placeholder="Confirm password" />
+                        <mat-icon matPrefix>vpn_key</mat-icon>
+                        <!-- TODO: add validation messages -->
+                    </mat-form-field>
+
+                    <div class="actions">
+                        <button mat-raised-button class="botao" type="submit" value="atualizardados">
+                            Alterar Password
+                        </button>
+
+                        <button mat-raised-button type="reset" style="background-color: yellow; ">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
